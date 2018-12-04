@@ -38,6 +38,9 @@ Encore
   // React support
   .enableReactPreset()
 
+  // Source maps
+  .enableSourceMaps(!Encore.isProduction())
+
   /*
    * FEATURE CONFIG
    *
