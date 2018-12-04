@@ -14,6 +14,7 @@
 
 - Jquery Support
 - React.js Support
+- Bootstrap support
 - Customizable Webpack
 - POSTCSS, Stylus, Less, Sass support
 - Static files outside public folder support
