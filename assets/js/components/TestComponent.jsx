@@ -1,5 +1,7 @@
 import React from 'react';
 
+const testImage = require('../../images/reference_image.jpg');
+
 const TestComponent = () => (
   <div className="test-component">
     <h1>Hello From React</h1>
@@ -9,7 +11,7 @@ const TestComponent = () => (
       quisquam rerum vero iusto fuga culpa temporibus iste obcaecati ad
       dignissimos, ducimus saepe nulla?
     </p>
-
+    <img className="ref-image" src={testImage} alt="Ref image" />
     <span>Photo by Rec Fury on Unsplash</span>
   </div>
 );
