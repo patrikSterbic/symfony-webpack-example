@@ -9,3 +9,11 @@
 
 1.  Start Symfony app with `php bin/console server:run`
 2.  Compile assets `yarn encore dev` or `yarn encore dev --watch` for automatic recompile
+
+## Features
+
+- Jquery Support
+- React.js Support
+- Customizable Webpack
+- POSTCSS, Stylus, Less, Sass support
+- Static files outside public folder support

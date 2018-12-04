@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
 // import $ from 'jquery';
 
 import TestComponent from './components/TestComponent';
@@ -15,4 +15,4 @@ console.log('Webpack Encore loaded...');
 //   $('body').prepend('<h1>' + greet('Patrik') + '</h1>');
 // });
 
-render(<TestComponent />, document.getElementById('root'));
+ReactDOM.render(<TestComponent />, document.getElementById('root'));

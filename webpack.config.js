@@ -20,8 +20,6 @@ Encore
   .addEntry('app', './assets/js/app.js')
   .addEntry('checkout', './assets/js/checkout.js')
   .addEntry('account', './assets/js/account.js')
-  //.addEntry('page1', './assets/js/page1.js')
-  //.addEntry('page2', './assets/js/page2.js')
 
   // will require an extra script tag for runtime.js
   // but, you probably want this, unless you're building a single-page app
@@ -29,6 +27,8 @@ Encore
 
   // Style loaders
   .enableSassLoader()
+  .enableLessLoader()
+  .enableStylusLoader()
   .enablePostCssLoader(options => {
     options.config = {
       path: 'config/postcss.config.js',
@@ -37,9 +37,6 @@ Encore
 
   // React support
   .enableReactPreset()
-
-  // Source maps
-  .enableSourceMaps(!Encore.isProduction())
 
   /*
    * FEATURE CONFIG
