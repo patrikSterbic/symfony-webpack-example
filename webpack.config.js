@@ -5,8 +5,6 @@ Encore
   .setOutputPath('public/build/')
   // public path used by the web server to access the output path
   .setPublicPath('/build')
-  // only needed for CDN's or sub-directory deploy
-  //.setManifestKeyPrefix('build/')
 
   /*
    * ENTRY CONFIG
@@ -20,6 +18,7 @@ Encore
   .addEntry('app', './assets/js/app.js')
   .addEntry('checkout', './assets/js/checkout.js')
   .addEntry('account', './assets/js/account.js')
+  .splitEntryChunks()
 
   // will require an extra script tag for runtime.js
   // but, you probably want this, unless you're building a single-page app
@@ -27,8 +26,6 @@ Encore
 
   // Style loaders
   .enableSassLoader()
-  .enableLessLoader()
-  .enableStylusLoader()
   .enablePostCssLoader(options => {
     options.config = {
       path: 'config/postcss.config.js',
@@ -50,14 +47,5 @@ Encore
   .enableSourceMaps(!Encore.isProduction())
   // enables hashed filenames (e.g. app.abc123.css)
   .enableVersioning(Encore.isProduction());
-
-// enables Sass/SCSS support
-//.enableSassLoader()
-
-// uncomment if you use TypeScript
-//.enableTypeScriptLoader()
-
-// uncomment if you're having problems with a jQuery plugin
-//.autoProvidejQuery()
 
 module.exports = Encore.getWebpackConfig();
