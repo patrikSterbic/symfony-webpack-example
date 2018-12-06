@@ -12,9 +12,9 @@ const TestComponent = () => (
         quisquam rerum vero iusto fuga culpa temporibus iste obcaecati ad
         dignissimos, ducimus saepe nulla?
       </p>
-      <img className="ref-image" src={testImage} alt="Ref image" />
+      <img className="ref-image" src={testImage} alt="Hello world" />
       <p>Photo by Rec Fury on Unsplash</p>
-      <button type="button" class="btn btn-primary">
+      <button type="button" className="btn btn-primary">
         Show more
       </button>
     </div>

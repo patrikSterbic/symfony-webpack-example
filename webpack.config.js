@@ -18,6 +18,7 @@ Encore
   .addEntry('app', './assets/js/app.js')
   .addEntry('checkout', './assets/js/checkout.js')
   .addEntry('account', './assets/js/account.js')
+  .addEntry('queue', './assets/js/ui/queue.js')
   .splitEntryChunks()
 
   // will require an extra script tag for runtime.js
